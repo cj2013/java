@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "edit-server-folder")
+@FeignClient(value = "edit-server-folder", fallback = SchedualServiceFolderHytrix.class)
 public interface ISchedualServiceFolder {
     @RequestMapping(value = "/folder/getname", method = RequestMethod.GET)
     String getName(@RequestParam(value = "name") String name);
