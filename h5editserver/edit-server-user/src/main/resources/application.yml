@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+server:
+  port: 9101
+spring:
+  application:
+    name: edit-service-user
+  zipkin:
+      base-url: http://localhost:9005
+  sleuth:
+    sampler:
+      percentage: 1.0
+logging:
+  file: "logs/edit-user-service.log"
+management:
+  security:
+    enabled: false
