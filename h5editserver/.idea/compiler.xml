@@ -6,8 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="edit-server-folder" />
+        <module name="edit-server-user" />
+        <module name="eureka-server" />
+        <module name="feignserver" />
         <module name="h5editserver" />
+        <module name="turbine-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
