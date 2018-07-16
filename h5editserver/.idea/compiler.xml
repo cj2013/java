@@ -12,6 +12,8 @@
         <module name="feignserver" />
         <module name="h5editserver" />
         <module name="turbine-service" />
+        <module name="zipkin-service" />
+        <module name="zuul-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
